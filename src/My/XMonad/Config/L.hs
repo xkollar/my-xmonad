@@ -1,6 +1,8 @@
 {-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE TemplateHaskell #-}
 module My.XMonad.Config.L
     ( update
+    , borderWidth
     , keys
     , logHook
     , manageHook
@@ -10,6 +12,7 @@ import Data.Map.Lazy (Map)
 
 import XMonad
     ( ButtonMask
+    , Dimension
     , KeySym
     , Layout
     , ManageHook
@@ -18,11 +21,14 @@ import XMonad
     )
 import qualified XMonad as X
     ( XConfig
-        ( logHook
+        ( borderWidth
         , keys
+        , logHook
         , manageHook
         )
     )
+
+import My.XMonad.Config.LTH (genL)
 
 
 --- {{{ Totally not a lens... -------------------------------------------------
@@ -34,14 +40,34 @@ data L a b = L
 update :: L a b -> (b -> b) -> a -> a
 update l f x = set l (f (get l x)) x
 
+genL "borderWidth"
+borderWidth :: L (XConfig l) Dimension
+
 type KeyConfig = XConfig Layout -> Map (ButtonMask, KeySym) (X ())
 
+genL "keys"
 keys :: L (XConfig l) KeyConfig
-keys = L X.keys (\ x c -> c { X.keys = x })
 
+genL "logHook"
 logHook :: L (XConfig l) (X ())
-logHook = L X.logHook (\ x c -> c { X.logHook = x })
 
+genL "manageHook"
 manageHook :: L (XConfig l) ManageHook
-manageHook = L X.manageHook (\ x c -> c { X.manageHook = x })
+
+-- Todo...
+-- clickJustFocuses   :: Bool
+-- focusFollowsMouse  :: Bool
+-- focusedBorderColor :: String
+-- handleEventHook    :: (Event -> X All)
+-- keys               :: (XConfig Layout -> M.Map (ButtonMask,KeySym) (X ()))
+-- layoutHook         :: (l Window)
+-- logHook            :: (X ())
+-- manageHook         :: ManageHook
+-- modMask            :: KeyMask
+-- mouseBindings      :: (XConfig Layout -> M.Map (ButtonMask, Button) (Window -> X ()))
+-- normalBorderColor  :: String
+-- startupHook        :: (X ())
+-- terminal           :: String
+-- workspaces         :: [String]
+
 --- }}} Totally not a lens... -------------------------------------------------

@@ -58,7 +58,7 @@ library
                     My.XMonad.Util.WindowProperties
 
   -- Modules included in this library but not exported.
-  -- other-modules:
+  other-modules:    My.XMonad.Config.LTH
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
@@ -68,6 +68,7 @@ library
                     X11,
                     containers,
                     mtl,
+                    template-haskell,
                     transformers,
                     unix,
                     xmonad,
@@ -86,6 +87,7 @@ executable my-xmonad
                     X11,
                     containers,
                     mtl,
+                    template-haskell,
                     transformers,
                     unix,
                     xmonad,
