@@ -19,24 +19,32 @@ on case-by-case basis.
 Characteristics
 ---------------
 
-* Easy configuration modifications (lens-like approach)
-* Easy compositing (you need compositing manager)
-* Multimedia key bindings for `amixer`
-* (TODO: Multimedia key bindings for `xmms2` (you need `nyxmms2`))
+* Easy configuration modifications (lens-like approach).
+* Easy compositing (you need compositing manager).
+* Multimedia key bindings for alsa (`amixer` required).
+* (TODO: Multimedia key bindings for `xmms2` (`nyxmms2` required)).
 * More lightweight subprocess spawning (no need to run `sh` for every subprocess).
-* Alternative multi-screen behavior (see Multi-screen and simpleView).
+* Alternative multi-screen behavior (see Multi-screen and `simpleView`).
 
-Multi-screen and simpleView
-----------------------------
+Multi-screen and `simpleView`
+-----------------------------
 
-While I am sure that default xmonad behavior for multi-screen
-systems is ok I recognized nedd for simple workflow, where
-there is one "main" screen and "extrnal" (zero or more) screens,
-where external screens each have one workspace and all other
-workspaces are on main screen and this association is fixed.
+Default xmonad behavior for multi-screen systems is very very
+powerful, but it can be a little confusing at the times.
 
-This way I allways know where to look when jumping to different
-worspace and whole thing is (mentally) stateless.
+OK I recognized need for simple work-flow:
+
+* There is one "main" screen and (zero or more) "external" screens.
+* Each external screen shows one workspace and all other
+  workspaces are on the main screen.
+* This association is fixed.
+
+I call this `simpleView`.
+
+Advantages:
+
+* It is (mentally) stateless (I always know where to look when
+  jumping to workspace).
 
 Requirements
 ------------
@@ -57,7 +65,7 @@ yum install libXft-devel libXinerama-devel libXrandr-devel
 ~~~
 
 If you plan to use xmobar then you can smoothen its installation
-by previously installing development version of `Xmp` library.
+by installing development version of `Xmp` library.
 
 ~~~ { .bash }
 yum install libXpm-devel
