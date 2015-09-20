@@ -19,7 +19,7 @@ import XMonad.Hooks.DynamicLog
     , xmobarColor
     , xmobarPP)
 
-import My.XMonad.Config.Tools (update, logHook)
+import My.XMonad.Config.L (update, logHook)
 
 addXmobar :: Handle -> XConfig l -> XConfig l
 addXmobar = update logHook . (>>) . myXmobarLogHook
