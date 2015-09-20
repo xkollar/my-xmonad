@@ -1,10 +1,10 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module My.XMonad.Config.Tools
-    ( prependLogHook
-    , updateKeys
+    ( update
+    , _logHook
+    , _keys
     ) where
 
-import Control.Monad ((>>))
 import Data.Map.Lazy (Map)
 
 import XMonad
@@ -18,10 +18,21 @@ import XMonad
         )
     )
 
-prependLogHook :: X a -> XConfig l -> XConfig l
-prependLogHook f c = c { logHook = f >> logHook c }
+
+--- {{{ Totally not a lens... -------------------------------------------------
+data L a b = L
+    { get :: a -> b
+    , set :: b -> a -> a
+    }
+
+update :: L a b -> (b -> b) -> a -> a
+update l f x = set l (f (get l x)) x
+
+_logHook :: L (XConfig l) (X ())
+_logHook = L logHook (\ x c -> c { logHook = x })
 
 type KeyConfig = XConfig Layout -> Map (ButtonMask, KeySym) (X ())
 
-updateKeys :: (KeyConfig -> KeyConfig) -> XConfig l -> XConfig l
-updateKeys f c = c { keys = f (keys c) }
+_keys :: L (XConfig l) KeyConfig
+_keys = L keys (\ x c -> c { keys = x })
+--- }}} Totally not a lens... -------------------------------------------------

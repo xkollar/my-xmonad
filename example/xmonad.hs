@@ -10,7 +10,7 @@ import My.XMonad.Config.Compositing (addCompositing)
 import My.XMonad.Config.Xmobar (addXmobar)
 import My.XMonad.Multimedia.Amixer (alsaKeys)
 
-import My.XMonad.Config.Tools (updateKeys)
+import My.XMonad.Config.Tools (update, _keys)
 import XMonad ((<+>))
 
 
@@ -18,6 +18,6 @@ main :: IO ()
 main = do
     h <- spawnPipe "xmobar"
     xmonad
-        . updateKeys (alsaKeys <+>)
+        . update _keys (alsaKeys <+>)
         . addCompositing 0.8
         $ addXmobar h myConfig

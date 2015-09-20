@@ -1,6 +1,7 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module My.XMonad.Config.Xmobar (addXmobar) where
 
+import Control.Monad ((>>))
 import Data.Function ((.), const)
 import Data.List ((++))
 
@@ -18,10 +19,10 @@ import XMonad.Hooks.DynamicLog
     , xmobarColor
     , xmobarPP)
 
-import My.XMonad.Config.Tools (prependLogHook)
+import My.XMonad.Config.Tools (update, _logHook)
 
 addXmobar :: Handle -> XConfig l -> XConfig l
-addXmobar = prependLogHook . myXmobarLogHook
+addXmobar = update _logHook . (>>) . myXmobarLogHook
 
 myXmobarLogHook :: Handle -> X ()
 myXmobarLogHook h = dynamicLogWithPP xmobarPP
