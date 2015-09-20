@@ -6,7 +6,6 @@ import Prelude (String)
 import Control.Monad ((>>), return)
 import Data.Bool (Bool(False, True), not)
 import Data.Char (isSpace)
--- import Data.Eq (Eq, (==))
 import Data.Function ((.), ($))
 import Data.List ((++), dropWhile, filter, map, nub, null, zip)
 import qualified Data.Map.Lazy as M (Map, fromList)
@@ -201,7 +200,7 @@ myShellPrompt :: X ()
 myShellPrompt = shellPrompt defaultXPConfig { historyFilter = hf , font = fn }
     where
     hf = nub . filter (not . null) . map (dropWhile isSpace)
-    fn = "-misc-fixed-*-*-*-*-*-*-*-*-*-*-*-*"
+    fn = "-*-Terminus-*-*-*-*-*-*-*-*-*-*-iso10646-*"
 
 
 myMouseBindings :: XM.XConfig Layout -> M.Map (KeyMask, Button) (Window -> X ())
