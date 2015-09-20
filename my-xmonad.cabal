@@ -49,6 +49,9 @@ cabal-version:       >=1.10
 library
   -- Modules exported by the library.
   exposed-modules:    My.XMonad.Config,
+                      My.XMonad.Config.Compositing,
+                      My.XMonad.Config.Tools,
+                      My.XMonad.Config.Xmobar,
                       My.XMonad.Core,
                       My.XMonad.Multimedia.Amixer,
                       My.XMonad.StackSet,
