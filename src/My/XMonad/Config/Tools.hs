@@ -1,8 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module My.XMonad.Config.Tools
     ( update
-    , _logHook
-    , _keys
+    , keys
+    , logHook
+    , manageHook
     ) where
 
 import Data.Map.Lazy (Map)
@@ -14,6 +15,9 @@ import XMonad
     , ManageHook
     , X
     , XConfig
+    )
+import qualified XMonad as X
+    ( XConfig
         ( logHook
         , keys
         , manageHook
@@ -32,12 +36,12 @@ update l f x = set l (f (get l x)) x
 
 type KeyConfig = XConfig Layout -> Map (ButtonMask, KeySym) (X ())
 
-_keys :: L (XConfig l) KeyConfig
-_keys = L keys (\ x c -> c { keys = x })
+keys :: L (XConfig l) KeyConfig
+keys = L X.keys (\ x c -> c { X.keys = x })
 
-_logHook :: L (XConfig l) (X ())
-_logHook = L logHook (\ x c -> c { logHook = x })
+logHook :: L (XConfig l) (X ())
+logHook = L X.logHook (\ x c -> c { X.logHook = x })
 
-_manageHook :: L (XConfig l) ManageHook
-_manageHook = L manageHook (\ x c -> c { manageHook = x })
+manageHook :: L (XConfig l) ManageHook
+manageHook = L X.manageHook (\ x c -> c { X.manageHook = x })
 --- }}} Totally not a lens... -------------------------------------------------

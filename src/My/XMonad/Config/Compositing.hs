@@ -9,7 +9,7 @@ import Data.Function ((.))
 import XMonad (XConfig)
 import XMonad.Hooks.FadeInactive (fadeInactiveLogHook)
 
-import My.XMonad.Config.Tools (update, _logHook)
+import My.XMonad.Config.Tools (update, logHook)
 
 addCompositing :: Rational -> XConfig l -> XConfig l
-addCompositing = update _logHook . (>>) . fadeInactiveLogHook
+addCompositing = update logHook . (>>) . fadeInactiveLogHook
