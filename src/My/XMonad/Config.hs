@@ -222,6 +222,7 @@ myManageHook = composeAll
     [ isFullscreen --> doFullFloat
     , className =? "MPlayer" --> doCenterFloat
     , className =? "Xmessage" --> doCenterFloat
+    , className =? "Gitk" --> doCenterFloat
     ]
 
 myHandleEventHook :: Event -> X All
