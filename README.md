@@ -29,22 +29,19 @@ Characteristics
 Multi-screen and `simpleView`
 -----------------------------
 
-Default xmonad behavior for multi-screen systems is very very
-powerful, but it can be a little confusing at the times.
+Default xmonad behavior for multi-screen systems is very powerful
+but it can be a little confusing at the times.
 
-OK I recognized need for simple work-flow:
+I prefer much simpler setup:
 
 * There is one "main" screen and (zero or more) "external" screens.
-* Each external screen shows one workspace and all other
-  workspaces are on the main screen.
-* This association is fixed.
+* Each external screen shows one (fixed) workspace.
+* And all other workspaces are on the main screen.
 
 I call this `simpleView`.
 
-Advantages:
-
-* It is (mentally) stateless (I always know where to look when
-  jumping to workspace).
+Its main advantage is (mental) statelessness (I always know where
+to look when switching to particular workspace).
 
 Requirements
 ------------
