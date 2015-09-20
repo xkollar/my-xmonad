@@ -73,8 +73,12 @@ Installation
 
 ~~~ { .bash }
 git clone https://github.com/xkollar/my-xmonad.git
-cd my-git
+cd my-xmonad
 cabal install
 ~~~
 
-Example configuration can be found in <example/xmonad.hs>.
+Cabals local bin directory (usually `~/.cabal/bin`) have to be in `$PATH`.
+and `~/.xmonad/xmonad.hs` have to contain xmonad configuration.
+Example configuration using this package can be found in [example/xmonad.hs](example/xmonad.hs).
+
+For more details see [Configuring xmonad](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Doc-Configuring.html).
