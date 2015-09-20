@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Multimedia.Amixer where
+module My.XMonad.Multimedia.Amixer (alsaKeys) where
 
 import Control.Arrow (first)
 import Data.Function ((.), ($))
@@ -11,10 +11,10 @@ import XMonad (KeyMask, KeySym, X, noModMask)
 
 import My.XMonad.Core (spawn)
 
-alsaKeys :: M.Map (KeyMask, KeySym) (X ())
-alsaKeys = M.fromList . map (first $ (,) noModMask) $
+alsaKeys :: a -> M.Map (KeyMask, KeySym) (X ())
+alsaKeys _ = M.fromList . map (first $ (,) noModMask) $
     [ (XF86.xF86XK_AudioLowerVolume, amixer "5%-")
     , (XF86.xF86XK_AudioMute,        amixer "toggle")
     , (XF86.xF86XK_AudioRaiseVolume, amixer "5%+")
     ]
-    where amixer c = spawn "amixer" ["set", "Master", c]
+    where amixer c = spawn "amixer" ["-q", "set", "Master", c]
