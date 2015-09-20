@@ -1,7 +1,8 @@
 My xmonad configuration
 =======================
 
-lt;dr: Things that I like to have set up when using xmonad.
+lt;dr: Things that I like to have set up when using
+[xmonad](http://xmonad.org/).
 
 I do not use the same configuration on every machine (various
 reasons). Therefore, configuring new machine is not as easy as
@@ -82,3 +83,8 @@ and `~/.xmonad/xmonad.hs` have to contain xmonad configuration.
 Example configuration using this package can be found in [example/xmonad.hs](example/xmonad.hs).
 
 For more details see [Configuring xmonad](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Doc-Configuring.html).
+
+Issues
+------
+
+When installed in sandbox restart (`mod-q`) does not work.
