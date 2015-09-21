@@ -54,6 +54,7 @@ library
                     My.XMonad.Config.Xmobar,
                     My.XMonad.Core,
                     My.XMonad.Multimedia.Amixer,
+                    My.XMonad.Multimedia.XMMS2,
                     My.XMonad.StackSet,
                     My.XMonad.Util.WindowProperties
 
