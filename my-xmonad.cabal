@@ -50,6 +50,7 @@ library
   -- Modules exported by the library.
   exposed-modules:  My.XMonad.Config,
                     My.XMonad.Config.Compositing,
+                    My.XMonad.Config.Desktop,
                     My.XMonad.Config.L,
                     My.XMonad.Config.Xmobar,
                     My.XMonad.Core,
