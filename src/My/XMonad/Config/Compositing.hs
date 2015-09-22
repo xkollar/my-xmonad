@@ -7,9 +7,9 @@ import Control.Monad ((>>))
 import Data.Function ((.))
 
 import XMonad (XConfig)
-import XMonad.Hooks.FadeInactive (fadeInactiveLogHook)
+import XMonad.Hooks.FadeInactive (fadeInactiveCurrentWSLogHook)
 
 import My.XMonad.Config.L (update, logHook)
 
 addCompositing :: Rational -> XConfig l -> XConfig l
-addCompositing = update logHook . (>>) . fadeInactiveLogHook
+addCompositing = update logHook . (>>) . fadeInactiveCurrentWSLogHook
