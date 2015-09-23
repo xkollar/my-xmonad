@@ -20,18 +20,22 @@ on case-by-case basis.
 Characteristics
 ---------------
 
-* Easy configuration modifications (lens-like approach).
-* Easy compositing (you need compositing manager).
-* Multimedia key bindings for alsa (`amixer` required).
-* (TODO: Multimedia key bindings for `xmms2` (`nyxmms2` required)).
-* More lightweight subprocess spawning (no need to run `sh` for every subprocess).
 * Alternative multi-screen behavior (see Multi-screen and `simpleView`).
+* Multimedia-Key bindings for `alsa` (`amixer` required).
+* Multimedia-Key bindings for `xmms2` (`nyxmms2` required).
+* Easy compositing (you need compositing manager).
+* Easy `xmobar` integration (you need `xmobar`).
+* Easy desktop integration (for use as window manager with desktop manager).
+* More lightweight subprocess spawning (no need to run `sh` for every subprocess).
+* Easy configuration modifications (lens-like approach).
 
 Multi-screen and `simpleView`
 -----------------------------
 
-Default xmonad behavior for multi-screen systems is very powerful
-but it can be a little confusing at the times.
+Default xmonad behavior for multi-screen systems (implemented as
+[view](http://xmonad.org/xmonad-docs/xmonad/XMonad-StackSet.html#v:view)
+or [greedyView](http://xmonad.org/xmonad-docs/xmonad/XMonad-StackSet.html#v:greedyView))
+is very powerful but it can be a little confusing at the times.
 
 I prefer much simpler setup:
 
@@ -69,8 +73,8 @@ by installing development version of `Xmp` library.
 yum install libXpm-devel
 ~~~
 
-Installation
-------------
+Installation + Configuration
+----------------------------
 
 ~~~ { .bash }
 git clone https://github.com/xkollar/my-xmonad.git
@@ -84,7 +88,7 @@ Example configuration using this package can be found in [example/xmonad.hs](exa
 
 For more details see [Configuring xmonad](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Doc-Configuring.html).
 
-Issues
-------
+Pitfalls / Issues
+-----------------
 
 When installed in sandbox restart (`mod-q`) does not work.
