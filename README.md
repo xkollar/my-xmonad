@@ -91,4 +91,4 @@ For more details see [Configuring xmonad](http://xmonad.org/xmonad-docs/xmonad-c
 Pitfalls / Issues
 -----------------
 
-When installed in sandbox restart (`mod-q`) does not work.
+Restart (`mod-q`) does not work when installed in cabal sandbox.
