@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vim -->
+<!DOCTYPE root [
+ <!ENTITY larr "&#8592;">
+ <!ENTITY tabs "&#8633;">
+ <!ENTITY returns "&#8629;">
+ <!ENTITY shiftls "&#8679;">
+ <!ENTITY shiftrs "&#8679;">
+]><svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="0 0 302 102"
+   id="svg2"
+   version="1.1"
+   width="302mm"
+   height="102mm">
+  <defs id="defs">
+    <rect id="boxik" x="1" y="1" rx="1" ry="1" width="18" height="18" style="fill:#fff;stroke:#000;stroke-width:0.5" />
+    <circle id="mark" cx="10" cy="17" r="1" style="fill:gray;stroke:none;stroke-width:0.5" />
+    <g id="k_grave"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">~</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">`</text></g>
+    <g id="k_1"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">!</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">1</text></g>
+    <g id="k_2"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">@</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">2</text></g>
+    <g id="k_3"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">#</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">3</text></g>
+    <g id="k_4"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">$</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">4</text></g>
+    <g id="k_5"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">%</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">5</text></g>
+    <g id="k_6"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">^</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">6</text></g>
+    <g id="k_7"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">&amp;</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">7</text></g>
+    <g id="k_8"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">*</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">8</text></g>
+    <g id="k_9"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">(</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">9</text></g>
+    <g id="k_0"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">)</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">0</text></g>
+    <g id="k_-"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">_</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">-</text></g>
+    <g id="k_="><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">+</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">=</text></g>
+    <g id="k_BackSpace"><rect x="1" y="1" rx="1" ry="1" width="38" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">&larr;</text></g>
+    <g id="k_Tab"><rect x="1" y="1" rx="1" ry="1" width="28" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">&tabs;</text></g>
+    <g id="k_q"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">Q</text></g>
+    <g id="k_w"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">W</text></g>
+    <g id="k_e"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">E</text></g>
+    <g id="k_r"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">R</text></g>
+    <g id="k_t"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">T</text></g>
+    <g id="k_y"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">Y</text></g>
+    <g id="k_u"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">U</text></g>
+    <g id="k_i"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">I</text></g>
+    <g id="k_o"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">O</text></g>
+    <g id="k_p"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">P</text></g>
+    <g id="k_["><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">{</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">[</text></g>
+    <g id="k_]"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">}</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">]</text></g>
+    <g id="k_backslash"><rect x="1" y="1" rx="1" ry="1" width="28" height="18" style="fill:#fff;stroke:#000;stroke-width:0.5" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">|</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">\</text></g>
+    <g id="k_CapsLock"><rect x="1" y="1" rx="1" ry="1" width="33" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_a"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">A</text></g>
+    <g id="k_s"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">S</text></g>
+    <g id="k_d"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">D</text></g>
+    <g id="k_f"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">F</text><use xlink:href="#mark" /></g>
+    <g id="k_g"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">G</text></g>
+    <g id="k_h"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">H</text></g>
+    <g id="k_j"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">J</text><use xlink:href="#mark" /></g>
+    <g id="k_k"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">K</text></g>
+    <g id="k_l"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">L</text></g>
+    <g id="k_;"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">:</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">;</text></g>
+    <g id="k_'"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">"</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">'</text></g>
+    <g id="k_Return"><rect x="1" y="1" rx="1" ry="1" width="43" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">&returns;</text></g>
+    <g id="k_ShiftL"><rect x="1" y="1" rx="1" ry="1" width="43" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">&shiftls;</text></g>
+    <g id="k_z"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">Z</text></g>
+    <g id="k_x"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">X</text></g>
+    <g id="k_c"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">C</text></g>
+    <g id="k_v"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">V</text></g>
+    <g id="k_b"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">B</text></g>
+    <g id="k_n"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">N</text></g>
+    <g id="k_m"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">M</text></g>
+    <g id="k_,"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">&lt;</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">,</text></g>
+    <g id="k_."><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">&gt;</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">.</text></g>
+    <g id="k_/"><use xlink:href="#boxik" /><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="9">?</text><text text-anchor="middle" font-family="Monospace" font-size="7" x="5" y="17">/</text></g>
+    <g id="k_ShiftR"><rect x="1" y="1" rx="1" ry="1" width="53" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /><text text-anchor="middle" font-family="Monospace" font-size="10" x="6" y="11">&shiftrs;</text></g>
+    <g id="k_ControlL"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_SuperL"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_AltL"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_Space"><rect x="1" y="1" rx="1" ry="1" width="123" height="18" style="fill:#fff;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_AltL"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_SuperL"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_Menu"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+    <g id="k_ControlL"><rect x="1" y="1" rx="1" ry="1" width="23" height="18" style="fill:gray;stroke:#000;stroke-width:0.5" /></g>
+  </defs>
+  <rect width="100%" height="100%" style="fill:none;stroke:#000000;stroke-width:0.1" />
+  <g transform="translate(1,1)">
+    <use xlink:href="#k_grave"       x="0"  y="0" />
+    <use xlink:href="#k_1"          x="20"  y="0" />
+    <use xlink:href="#k_2"          x="40"  y="0" />
+    <use xlink:href="#k_3"          x="60"  y="0" />
+    <use xlink:href="#k_4"          x="80"  y="0" />
+    <use xlink:href="#k_5"         x="100"  y="0" />
+    <use xlink:href="#k_6"         x="120"  y="0" />
+    <use xlink:href="#k_7"         x="140"  y="0" />
+    <use xlink:href="#k_8"         x="160"  y="0" />
+    <use xlink:href="#k_9"         x="180"  y="0" />
+    <use xlink:href="#k_0"         x="200"  y="0" />
+    <use xlink:href="#k_-"         x="220"  y="0" />
+    <use xlink:href="#k_="         x="240"  y="0" />
+    <use xlink:href="#k_BackSpace" x="260"  y="0" />
+    <use xlink:href="#k_Tab"         x="0" y="20" />
+    <use xlink:href="#k_q"          x="30" y="20" />
+    <use xlink:href="#k_w"          x="50" y="20" />
+    <use xlink:href="#k_e"          x="70" y="20" />
+    <use xlink:href="#k_r"          x="90" y="20" />
+    <use xlink:href="#k_t"         x="110" y="20" />
+    <use xlink:href="#k_y"         x="130" y="20" />
+    <use xlink:href="#k_u"         x="150" y="20" />
+    <use xlink:href="#k_i"         x="170" y="20" />
+    <use xlink:href="#k_o"         x="190" y="20" />
+    <use xlink:href="#k_p"         x="210" y="20" />
+    <use xlink:href="#k_["         x="230" y="20" />
+    <use xlink:href="#k_]"         x="250" y="20" />
+    <use xlink:href="#k_backslash" x="270" y="20" />
+    <use xlink:href="#k_CapsLock"    x="0" y="40" />
+    <use xlink:href="#k_a"          x="35" y="40" />
+    <use xlink:href="#k_s"          x="55" y="40" />
+    <use xlink:href="#k_d"          x="75" y="40" />
+    <use xlink:href="#k_f"          x="95" y="40" />
+    <use xlink:href="#k_g"         x="115" y="40" />
+    <use xlink:href="#k_h"         x="135" y="40" />
+    <use xlink:href="#k_j"         x="155" y="40" />
+    <use xlink:href="#k_k"         x="175" y="40" />
+    <use xlink:href="#k_l"         x="195" y="40" />
+    <use xlink:href="#k_;"         x="215" y="40" />
+    <use xlink:href="#k_'"         x="235" y="40" />
+    <use xlink:href="#k_Return"    x="255" y="40" />
+    <use xlink:href="#k_ShiftL"      x="0" y="60" />
+    <use xlink:href="#k_z"          x="45" y="60" />
+    <use xlink:href="#k_x"          x="65" y="60" />
+    <use xlink:href="#k_c"          x="85" y="60" />
+    <use xlink:href="#k_v"         x="105" y="60" />
+    <use xlink:href="#k_b"         x="125" y="60" />
+    <use xlink:href="#k_n"         x="145" y="60" />
+    <use xlink:href="#k_m"         x="165" y="60" />
+    <use xlink:href="#k_,"         x="185" y="60" />
+    <use xlink:href="#k_."         x="205" y="60" />
+    <use xlink:href="#k_/"         x="225" y="60" />
+    <use xlink:href="#k_ShiftR"    x="245" y="60" />
+    <use xlink:href="#k_ControlL"    x="0" y="80" />
+    <use xlink:href="#k_SuperL"     x="25" y="80" />
+    <use xlink:href="#k_AltL"       x="50" y="80" />
+    <use xlink:href="#k_Space"      x="75" y="80" />
+    <use xlink:href="#k_AltL"      x="200" y="80" />
+    <use xlink:href="#k_SuperL"    x="225" y="80" />
+    <use xlink:href="#k_Menu"      x="250" y="80" />
+    <use xlink:href="#k_ControlL"  x="275" y="80" />
+  </g>
+</svg>
