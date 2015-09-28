@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Multimedia.Amixer (alsaKeys) where
+module My.XMonad.Config.Amixer (alsaKeys) where
 
 import Control.Arrow ((***))
 import Data.Function ((.), ($))

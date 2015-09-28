@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Multimedia.XMMS2 (
+module My.XMonad.Config.XMMS2 (
       xmms2Keys
     , xmms2KeysBase
     , xmms2KeysExtra
