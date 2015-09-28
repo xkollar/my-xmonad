@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Config.Desktop (addDesktop) where
+module My.XMonad.Config.Mods.Desktop (addDesktop) where
 
 import Data.Function ((.))
 

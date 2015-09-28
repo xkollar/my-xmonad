@@ -49,13 +49,13 @@ cabal-version:      >=1.10
 library
   -- Modules exported by the library.
   exposed-modules:  My.XMonad.Config,
-                    My.XMonad.Config.Amixer,
-                    My.XMonad.Config.Compositing,
-                    My.XMonad.Config.Desktop,
                     My.XMonad.Config.L,
-                    My.XMonad.Config.Sandboxed,
-                    My.XMonad.Config.XMMS2,
-                    My.XMonad.Config.Xmobar,
+                    My.XMonad.Config.Mods.Amixer,
+                    My.XMonad.Config.Mods.Compositing,
+                    My.XMonad.Config.Mods.Desktop,
+                    My.XMonad.Config.Mods.Sandboxed,
+                    My.XMonad.Config.Mods.XMMS2,
+                    My.XMonad.Config.Mods.Xmobar,
                     My.XMonad.Core,
                     My.XMonad.StackSet,
                     My.XMonad.Util.WindowProperties

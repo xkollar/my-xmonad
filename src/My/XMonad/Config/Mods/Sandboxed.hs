@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Config.Sandboxed
+module My.XMonad.Config.Mods.Sandboxed
     ( sandboxed
     , recompileSandboxed
     ) where

@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Config.Compositing (addCompositing) where
+module My.XMonad.Config.Mods.Compositing (addCompositing) where
 
 import Prelude (Rational)
 

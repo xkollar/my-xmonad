@@ -1,5 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-module My.XMonad.Config.Xmobar (addXmobar) where
+module My.XMonad.Config.Mods.Xmobar (addXmobar) where
 
 import Control.Monad ((>>))
 import Data.Function ((.), const)
