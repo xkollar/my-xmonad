@@ -88,7 +88,50 @@ Example configuration using this package can be found in [example/xmonad.hs](exa
 
 For more details see [Configuring xmonad](http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Doc-Configuring.html).
 
-Pitfalls / Issues
------------------
+Xmonad Sandboxed
+----------------
 
-Restart (`mod-q`) does not work when installed in cabal sandbox.
+tl;dr: you can use `My.XMonad.Config.Sandboxed` when running
+sandboxed xmonad.
+
+In case you have tried installing xmonad in sandbox, you have
+probably found out that it is not going to work out of box.
+
+The issue is that when xmonad tries to recompile your
+configuration, it runs plain `GHC`, without information
+about packages installed in your sandbox. Solution is quite easy.
+`GHC` can take information about package database not only
+via command-line argument `--package-db`, but also via
+`GHC_PACKAGE_PATH` environment variable.
+
+Command `xmonad --recompile` (which is how xmonad recompiles
+itself) can be simple modified to:
+
+~~~ { .bash }
+GHC_PACKAGE_PATH="${PATH_TO}/.cabal-sandbox/x86_64-linux-ghc-7.8.4-packages.conf.d": xmonad --recompile
+~~~~
+
+(Note colon (`:`) at the end of the path, which is necessary unless
+there is _everything_ in your sandbox.) Setting the environment
+variable to the `xmonad --restart` is not necessary as it just
+signals to currently running xmonad to execute (recompiled) binary
+(with command-line arguments describing current state).
+
+Appropriate helper is readily available in
+[My.XMonad.Config.Sandboxed](src/My/XMonad/Config/Sandboxed.hs).
+Example use:
+
+~~~ { .haskell }
+module Main (main) where
+
+import XMonad (xmonad)
+
+import My.XMonad.Config (myConfig)
+import My.XMonad.Config.Sandboxed (sandboxed)
+
+
+main :: IO ()
+main = xmonad $ sandboxed myConfig
+~~~
+
+By the way: `GHCi` can also be parametrized with `--package-db` and `GHC_PACKAGE_PATH`.
