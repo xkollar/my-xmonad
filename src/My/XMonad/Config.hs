@@ -32,7 +32,6 @@ import qualified XMonad as XM
         , terminal
         , workspaces
         )
-    , spawn
     )
 import XMonad
     ( X
@@ -103,7 +102,7 @@ import XMonad.Prompt.Shell (shellPrompt)
 import qualified XMonad.StackSet as W
 import qualified XMonad.Operations as XM
 
-import My.XMonad.Core (spawn')
+import My.XMonad.Core (spawn', spawnSh)
 import My.XMonad.StackSet (simpleView)
 
 
@@ -182,7 +181,7 @@ myKeys conf@(XM.XConfig {XM.modMask = modMask}) = M.fromList $
 
     --- {{{ Quit or restart
     , ((modMask .|. shiftMask, xK_q), io exitSuccess) -- %! Quit xmonad
-    , ((modMask              , xK_q), XM.spawn
+    , ((modMask              , xK_q), spawnSh
         "if type xmonad; then xmonad --recompile && xmonad --restart; else xmessage xmonad not in \\$PATH: \"$PATH\"; fi") -- %! Restart xmonad
     --- }}} Quit or restart
 

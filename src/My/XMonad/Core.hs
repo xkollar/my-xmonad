@@ -4,6 +4,7 @@ module My.XMonad.Core
     , KeyMap
     , spawn
     , spawn'
+    , spawnSh
     ) where
 
 import Prelude (String)
@@ -24,13 +25,16 @@ import XMonad
     , X
     , XConfig
     )
-import XMonad.Core (xfork)
+import qualified XMonad.Core as X (spawn, xfork)
 
 type KeyMap = Map (KeyMask, KeySym) (X ())
 type KeyConfig = XConfig Layout -> KeyMap
 
 spawn :: (Functor m, MonadIO m) => String -> [String] -> m ()
-spawn command args = void . xfork $ executeFile command True args Nothing
+spawn command args = void . X.xfork $ executeFile command True args Nothing
 
 spawn' :: (Functor m, MonadIO m) => String -> m ()
 spawn' command = spawn command []
+
+spawnSh :: MonadIO m => String -> m ()
+spawnSh = X.spawn

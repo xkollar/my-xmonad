@@ -8,10 +8,10 @@ import Data.Function (($))
 import Data.List (concat)
 import Data.Map.Lazy (fromList)
 
-import XMonad (X, XConfig(modMask), xK_q, (<+>), spawn)
+import XMonad (X, XConfig(modMask), xK_q, (<+>))
 
 import My.XMonad.Config.L (update, keys)
-import My.XMonad.Core (KeyConfig)
+import My.XMonad.Core (KeyConfig, spawnSh)
 
 sandboxed :: XConfig l -> XConfig l
 sandboxed = update keys (recompileSandboxedKeys <+>)
@@ -21,7 +21,7 @@ recompileSandboxedKeys c = fromList
     [((modMask c, xK_q), recompileSandboxed)]
 
 recompileSandboxed :: X ()
-recompileSandboxed = spawn $ concat
+recompileSandboxed = spawnSh $ concat
     [ "if type xmonad;then "
     , "GHC_PACKAGE_PATH=\"`echo \"\\` which xmonad"
     , "|xargs readlink -f"
