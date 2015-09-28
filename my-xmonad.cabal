@@ -53,6 +53,7 @@ library
                     My.XMonad.Config.Compositing,
                     My.XMonad.Config.Desktop,
                     My.XMonad.Config.L,
+                    My.XMonad.Config.Sandboxed,
                     My.XMonad.Config.XMMS2,
                     My.XMonad.Config.Xmobar,
                     My.XMonad.Core,
