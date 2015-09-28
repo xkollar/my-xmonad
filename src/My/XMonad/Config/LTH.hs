@@ -34,6 +34,6 @@ genL accessor = return
     a = mkName accessor
     xa = mkName ("X." ++ accessor)
     l = ConE (mkName "L")
-    x = (mkName "x")
-    c = (mkName "c")
+    x = mkName "x"
+    c = mkName "c"
 

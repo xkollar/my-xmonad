@@ -8,7 +8,7 @@ module My.XMonad.Config.XMMS2 (
 import Prelude (String)
 
 import Control.Arrow ((***))
-import Data.Function ((.), ($))
+import Data.Function ((.))
 import Data.List (map)
 import Data.Map.Lazy (fromList)
 
@@ -21,7 +21,7 @@ xmms2Keys :: KeyConfig
 xmms2Keys = xmms2KeysBase <+> xmms2KeysExtra
 
 xmms2KeysBase :: KeyConfig
-xmms2KeysBase _ = xmms2BindingsFromList noModMask $
+xmms2KeysBase _ = xmms2BindingsFromList noModMask
     [ (XF86.xF86XK_AudioLowerVolume, ["server", "volume", "-5"])
     , (XF86.xF86XK_AudioMute, ["server", "volume", "0"])
     , (XF86.xF86XK_AudioRaiseVolume, ["server", "volume", "+5"])
@@ -32,7 +32,7 @@ xmms2KeysBase _ = xmms2BindingsFromList noModMask $
     ]
 
 xmms2KeysExtra :: KeyConfig
-xmms2KeysExtra c = xmms2BindingsFromList (modMask c) $
+xmms2KeysExtra c = xmms2BindingsFromList (modMask c)
     [ (XF86.xF86XK_AudioPrev, ["seek", "-10"])
     , (XF86.xF86XK_AudioNext, ["seek", "+10"])
     ]
