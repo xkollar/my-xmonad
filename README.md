@@ -97,7 +97,7 @@ For more details see [Configuring xmonad](http://xmonad.org/xmonad-docs/xmonad-c
 Xmonad Sandboxed
 ----------------
 
-tl;dr: you can use `My.XMonad.Config.Sandboxed` when running
+tl;dr: you can use [`My.XMonad.Config.Mods.Sandboxed`](src/My/XMonad/Config/Mods/Sandboxed.hs) when running
 sandboxed xmonad.
 
 In case you have tried installing xmonad in sandbox, you have
@@ -124,7 +124,7 @@ signals to currently running xmonad to execute (recompiled) binary
 (with command-line arguments describing current state).
 
 Appropriate helper is readily available in
-[My.XMonad.Config.Sandboxed](src/My/XMonad/Config/Sandboxed.hs).
+[`My.XMonad.Config.Mods.Sandboxed`](src/My/XMonad/Config/Mods/Sandboxed.hs).
 Example use:
 
 ~~~ { .haskell }
@@ -133,7 +133,7 @@ module Main (main) where
 import XMonad (xmonad)
 
 import My.XMonad.Config (myConfig)
-import My.XMonad.Config.Sandboxed (sandboxed)
+import My.XMonad.Config.Mods.Sandboxed (sandboxed)
 
 
 main :: IO ()
