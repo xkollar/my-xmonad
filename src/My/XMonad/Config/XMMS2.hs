@@ -10,15 +10,12 @@ import Prelude (String)
 import Control.Arrow ((***))
 import Data.Function ((.), ($))
 import Data.List (map)
-import Data.Map.Lazy (Map, fromList)
+import Data.Map.Lazy (fromList)
 
 import qualified Graphics.X11.ExtraTypes.XF86 as XF86
-import XMonad (KeyMask, KeySym, Layout, X, XConfig(modMask), noModMask, (<+>))
+import XMonad (KeyMask, KeySym, XConfig(modMask), noModMask, (<+>))
 
-import My.XMonad.Core (spawn)
-
-type KeyMap = Map (KeyMask, KeySym) (X ())
-type KeyConfig = XConfig Layout -> KeyMap
+import My.XMonad.Core (KeyConfig, KeyMap, spawn)
 
 xmms2Keys :: KeyConfig
 xmms2Keys = xmms2KeysBase <+> xmms2KeysExtra

@@ -4,15 +4,15 @@ module My.XMonad.Config.Amixer (alsaKeys) where
 import Control.Arrow ((***))
 import Data.Function ((.), ($))
 import Data.List (map)
-import qualified Data.Map.Lazy as M (Map, fromList)
+import Data.Map.Lazy (fromList)
 
 import qualified Graphics.X11.ExtraTypes.XF86 as XF86
-import XMonad (KeyMask, KeySym, X, noModMask)
+import XMonad (noModMask)
 
-import My.XMonad.Core (spawn)
+import My.XMonad.Core (KeyConfig, spawn)
 
-alsaKeys :: a -> M.Map (KeyMask, KeySym) (X ())
-alsaKeys _ = M.fromList . map ((,) noModMask *** amixer) $
+alsaKeys :: KeyConfig
+alsaKeys _ = fromList . map ((,) noModMask *** amixer) $
     [ (XF86.xF86XK_AudioLowerVolume, "5%-")
     , (XF86.xF86XK_AudioMute, "toggle")
     , (XF86.xF86XK_AudioRaiseVolume, "5%+")
