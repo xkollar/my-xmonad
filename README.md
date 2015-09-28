@@ -20,12 +20,14 @@ on case-by-case basis.
 Characteristics
 ---------------
 
-* Alternative multi-screen behavior (see Multi-screen and `simpleView`).
-* Multimedia-Key bindings for `alsa` (`amixer` required).
-* Multimedia-Key bindings for `xmms2` (`nyxmms2` required).
-* Easy compositing (you need compositing manager).
-* Easy `xmobar` integration (you need `xmobar`).
+* Alternative/simplified multi-screen behavior (see Multi-screen and `simpleView`).
+* Various ready-to-use key bindings
+    * Multimedia-Key bindings for `alsa` (`amixer` required).
+    * Multimedia-Key bindings for `xmms2` (`nyxmms2` required).
 * Easy desktop integration (for use as window manager with desktop manager).
+* Easy `xmobar` integration (you need `xmobar`).
+* Easy to use when installed in Cabal sandbox.
+* Easy compositing (you need compositing manager, for example `xcompmgr`).
 * More lightweight subprocess spawning (no need to run `sh` for every subprocess).
 * Easy configuration modifications (lens-like approach).
 
