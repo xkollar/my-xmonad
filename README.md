@@ -117,8 +117,8 @@ itself) can be simple modified to:
 GHC_PACKAGE_PATH="${PATH_TO}/.cabal-sandbox/x86_64-linux-ghc-7.8.4-packages.conf.d": xmonad --recompile
 ~~~~
 
-(Note colon (`:`) at the end of the path, which is necessary unless
-there is _everything_ in your sandbox.) Setting the environment
+(Note th colon (`:`) at the end of the path. It is necessary unless
+the sandbox contains _everything_.) Setting the environment
 variable to the `xmonad --restart` is not necessary as it just
 signals to currently running xmonad to execute (recompiled) binary
 (with command-line arguments describing current state).
