@@ -50,6 +50,10 @@ I call this `simpleView`.
 Its main advantage is (mental) statelessness (I always know where
 to look when switching to particular workspace).
 
+### Example
+
+![Two-Screen Example](doc/two-screen.png)
+
 Requirements
 ------------
 
