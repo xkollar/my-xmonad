@@ -84,7 +84,19 @@ library
   default-language: Haskell2010
   ghc-options:      -Wall -fwarn-tabs -fwarn-implicit-prelude -fwarn-missing-import-lists
 
+flag build-example
+  description: Build also example
+  default: False
+  manual: True
+  -- Cabal checks if the configuration is possible, first
+  -- with this flag set to True and if not it tries with False
+
+
 executable my-xmonad
+  if flag(build-example)
+    buildable: True
+  else
+    buildable: False
   main-is:          xmonad.hs
   build-depends:    base >=4.7 && <4.8,
                     X11,
