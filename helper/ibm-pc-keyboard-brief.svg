@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vim -->
+<!DOCTYPE root [
+ <!ENTITY larr "&#8592;">
+ <!ENTITY tabs "&#8633;">
+ <!ENTITY returns "&#8629;">
+ <!ENTITY shiftls "&#8679;">
+ <!ENTITY shiftrs "&#8679;">
+]><svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="0 0 302 102"
+   id="svg2"
+   version="1.1"
+   width="302mm"
+   height="102mm">
+  <style type="text/css" ><![CDATA[
+    .btn {
+      fill: #fff;
+      stroke: #000;
+      stroke-width:0.5;
+    }
+    .btnGray {
+      fill: gray;
+      stroke: #000;
+      stroke-width:0.5;
+    }
+  ]]></style>
+  <defs id="defs">
+    <!-- {{{ Shapes -->
+    <rect id="box1.00" x="1" y="1" rx="1" ry="1"  width="18" height="18" class="btn" />
+    <rect id="box1.50" x="1" y="1" rx="1" ry="1"  width="28" height="18" class="btn" />
+    <rect id="box6.25" x="1" y="1" rx="1" ry="1" width="123" height="18" class="btn" />
+    <rect id="boX1.25" x="1" y="1" rx="1" ry="1"  width="23" height="18" class="btnGray" />
+    <rect id="boX1.50" x="1" y="1" rx="1" ry="1"  width="28" height="18" class="btnGray" />
+    <rect id="boX1.75" x="1" y="1" rx="1" ry="1"  width="33" height="18" class="btnGray" />
+    <rect id="boX2.00" x="1" y="1" rx="1" ry="1"  width="38" height="18" class="btnGray" />
+    <rect id="boX2.25" x="1" y="1" rx="1" ry="1"  width="43" height="18" class="btnGray" />
+    <rect id="boX2.75" x="1" y="1" rx="1" ry="1"  width="53" height="18" class="btnGray" />
+    <circle id="mark" cx="10" cy="17" r="1" style="fill:gray;stroke:none;stroke-width:0.5" />
+    <!-- }}} Shapes -->
+    <!-- {{{ Keys -->
+    <g  id="kc_49"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_10"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_11"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_12"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_13"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_14"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_15"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_16"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_17"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_18"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_19"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_19"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_20"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_21"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_22"><use xlink:href="#boX2.00" /></g>
+
+    <g  id="kc_23"><use xlink:href="#boX1.50" /></g>
+    <g  id="kc_24"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_25"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_26"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_27"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_28"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_29"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_30"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_31"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_32"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_33"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_34"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_35"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_51"><use xlink:href="#box1.50" />_</g>
+
+    <g  id="kc_66"><use xlink:href="#boX1.75" /></g>
+    <g  id="kc_38"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_39"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_40"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_41"><use xlink:href="#box1.00" />_<use xlink:href="#mark" /></g>
+    <g  id="kc_42"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_43"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_44"><use xlink:href="#box1.00" />_<use xlink:href="#mark" /></g>
+    <g  id="kc_45"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_46"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_47"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_48"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_36"><use xlink:href="#boX2.25" /></g>
+
+    <g  id="kc_50"><use xlink:href="#boX2.25" /></g>
+    <g  id="kc_52"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_53"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_54"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_55"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_56"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_57"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_58"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_59"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_60"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_61"><use xlink:href="#box1.00" />_</g>
+    <g  id="kc_62"><use xlink:href="#boX2.75" /></g>
+
+    <g  id="kc_37"><use xlink:href="#boX1.25" /></g>
+    <g id="kc_133"><use xlink:href="#boX1.25" /></g>
+    <g  id="kc_64"><use xlink:href="#boX1.25" /></g>
+    <g  id="kc_65"><use xlink:href="#box6.25" /></g>
+    <g id="kc_108"><use xlink:href="#boX1.25" /></g>
+    <g id="kc_134"><use xlink:href="#boX1.25" /></g>
+    <g id="kc_135"><use xlink:href="#boX1.25" /></g>
+    <g id="kc_105"><use xlink:href="#boX1.25" /></g>
+    <!-- }}} Keys -->
+  </defs>
+  <rect width="100%" height="100%" style="fill:none;stroke:#000000;stroke-width:0.1" />
+  <g transform="translate(1,1)">
+    <!-- {{{ ROW 1 -->
+    <use xlink:href="#kc_49"    x="0"  y="0" />
+    <use xlink:href="#kc_10"   x="20"  y="0" />
+    <use xlink:href="#kc_11"   x="40"  y="0" />
+    <use xlink:href="#kc_12"   x="60"  y="0" />
+    <use xlink:href="#kc_13"   x="80"  y="0" />
+    <use xlink:href="#kc_14"  x="100"  y="0" />
+    <use xlink:href="#kc_15"  x="120"  y="0" />
+    <use xlink:href="#kc_16"  x="140"  y="0" />
+    <use xlink:href="#kc_17"  x="160"  y="0" />
+    <use xlink:href="#kc_18"  x="180"  y="0" />
+    <use xlink:href="#kc_19"  x="200"  y="0" />
+    <use xlink:href="#kc_20"  x="220"  y="0" />
+    <use xlink:href="#kc_21"  x="240"  y="0" />
+    <use xlink:href="#kc_22"  x="260"  y="0" />
+    <!-- }}} ROW 1 -->
+    <!-- {{{ ROW 2 -->
+    <use xlink:href="#kc_23"    x="0" y="20" />
+    <use xlink:href="#kc_24"   x="30" y="20" />
+    <use xlink:href="#kc_25"   x="50" y="20" />
+    <use xlink:href="#kc_26"   x="70" y="20" />
+    <use xlink:href="#kc_27"   x="90" y="20" />
+    <use xlink:href="#kc_28"  x="110" y="20" />
+    <use xlink:href="#kc_29"  x="130" y="20" />
+    <use xlink:href="#kc_30"  x="150" y="20" />
+    <use xlink:href="#kc_31"  x="170" y="20" />
+    <use xlink:href="#kc_32"  x="190" y="20" />
+    <use xlink:href="#kc_33"  x="210" y="20" />
+    <use xlink:href="#kc_34"  x="230" y="20" />
+    <use xlink:href="#kc_35"  x="250" y="20" />
+    <use xlink:href="#kc_51"  x="270" y="20" />
+    <!-- }}} ROW 2 -->
+    <!-- {{{ ROW 3 -->
+    <use xlink:href="#kc_66"    x="0" y="40" />
+    <use xlink:href="#kc_38"   x="35" y="40" />
+    <use xlink:href="#kc_39"   x="55" y="40" />
+    <use xlink:href="#kc_40"   x="75" y="40" />
+    <use xlink:href="#kc_41"   x="95" y="40" />
+    <use xlink:href="#kc_42"  x="115" y="40" />
+    <use xlink:href="#kc_43"  x="135" y="40" />
+    <use xlink:href="#kc_44"  x="155" y="40" />
+    <use xlink:href="#kc_45"  x="175" y="40" />
+    <use xlink:href="#kc_46"  x="195" y="40" />
+    <use xlink:href="#kc_47"  x="215" y="40" />
+    <use xlink:href="#kc_48"  x="235" y="40" />
+    <use xlink:href="#kc_36"  x="255" y="40" />
+    <!-- }}} ROW 3 -->
+    <!-- {{{ ROW 4 -->
+    <use xlink:href="#kc_50"    x="0" y="60" />
+    <use xlink:href="#kc_52"   x="45" y="60" />
+    <use xlink:href="#kc_53"   x="65" y="60" />
+    <use xlink:href="#kc_54"   x="85" y="60" />
+    <use xlink:href="#kc_55"  x="105" y="60" />
+    <use xlink:href="#kc_56"  x="125" y="60" />
+    <use xlink:href="#kc_57"  x="145" y="60" />
+    <use xlink:href="#kc_58"  x="165" y="60" />
+    <use xlink:href="#kc_59"  x="185" y="60" />
+    <use xlink:href="#kc_60"  x="205" y="60" />
+    <use xlink:href="#kc_61"  x="225" y="60" />
+    <use xlink:href="#kc_62"  x="245" y="60" />
+    <!-- }}} ROW 4 -->
+    <!-- {{{ ROW 5 -->
+    <use xlink:href="#kc_37"    x="0" y="80" />
+    <use xlink:href="#kc_133"  x="25" y="80" />
+    <use xlink:href="#kc_64"   x="50" y="80" />
+    <use xlink:href="#kc_65"   x="75" y="80" />
+    <use xlink:href="#kc_108" x="200" y="80" />
+    <use xlink:href="#kc_134" x="225" y="80" />
+    <use xlink:href="#kc_135" x="250" y="80" />
+    <use xlink:href="#kc_105" x="275" y="80" />
+    <!-- }}} ROW 5 -->
+  </g>
+</svg>
