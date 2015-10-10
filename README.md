@@ -56,8 +56,8 @@ to look when switching to particular workspace).
 
 Let us say that (for the sake of simplicity) you
 have two screens and 4 workpaces (1..4).
-You have bound <kbd>mod</kbd>-<kbd>1</kbd> through <kbd>mod</kbd>-<kbd>4</kbd>
-bound to appropriate workspace.
+You have <kbd>mod</kbd>-<kbd>1</kbd> through <kbd>mod</kbd>-<kbd>4</kbd>
+bound to respective workspaces.
 
 Combination <kbd>mod</kbd>-<kbd>1</kbd>: active screen is `External`
 screen and on it workspace 1. (On the `Main` screen is whatever was there before.)
