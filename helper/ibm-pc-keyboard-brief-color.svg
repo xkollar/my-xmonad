@@ -21,12 +21,15 @@
       stroke-width:0.5;
     }
     text { fill: #000; }
-    .f1 { fill: #fdd; }
-    .f2 { fill: #dfd; }
-    .f3 { fill: #ddf; }
-    .f4 { fill: #fdf; }
-    .f5 { fill: #ffd; }
-    .fs { fill: #fff; }
+    .fl1 { fill: #fdd; }
+    .fl2 { fill: #dfd; }
+    .fl3 { fill: #ddf; }
+    .fl4 { fill: #fdf; }
+    .fr1 { fill: #fdd; }
+    .fr2 { fill: #dfd; }
+    .fr3 { fill: #ddf; }
+    .fr4 { fill: #ffd; }
+    .f5 { fill: #fff; }
     .btnGray {
       fill: gray;
       stroke: #000;
@@ -118,71 +121,71 @@
   <rect width="100%" height="100%" style="fill:none;stroke:#000000;stroke-width:0.1" />
   <g transform="translate(1,1)">
     <!-- {{{ ROW 1 -->
-    <use xlink:href="#kc_49"    x="0"  y="0" class="f1" />
-    <use xlink:href="#kc_10"   x="20"  y="0" class="f1" />
-    <use xlink:href="#kc_11"   x="40"  y="0" class="f2" />
-    <use xlink:href="#kc_12"   x="60"  y="0" class="f3" />
-    <use xlink:href="#kc_13"   x="80"  y="0" class="f4" />
-    <use xlink:href="#kc_14"  x="100"  y="0" class="f5" />
-    <use xlink:href="#kc_15"  x="120"  y="0" class="f5" />
-    <use xlink:href="#kc_16"  x="140"  y="0" class="f4" />
-    <use xlink:href="#kc_17"  x="160"  y="0" class="f3" />
-    <use xlink:href="#kc_18"  x="180"  y="0" class="f2" />
-    <use xlink:href="#kc_19"  x="200"  y="0" class="f1" />
-    <use xlink:href="#kc_20"  x="220"  y="0" class="f1" />
-    <use xlink:href="#kc_21"  x="240"  y="0" class="f1" />
+    <use xlink:href="#kc_49"    x="0"  y="0" class="fl1" />
+    <use xlink:href="#kc_10"   x="20"  y="0" class="fl1" />
+    <use xlink:href="#kc_11"   x="40"  y="0" class="fl2" />
+    <use xlink:href="#kc_12"   x="60"  y="0" class="fl3" />
+    <use xlink:href="#kc_13"   x="80"  y="0" class="fl4" />
+    <use xlink:href="#kc_14"  x="100"  y="0" class="fl4" />
+    <use xlink:href="#kc_15"  x="120"  y="0" class="fr4" />
+    <use xlink:href="#kc_16"  x="140"  y="0" class="fr4" />
+    <use xlink:href="#kc_17"  x="160"  y="0" class="fr3" />
+    <use xlink:href="#kc_18"  x="180"  y="0" class="fr2" />
+    <use xlink:href="#kc_19"  x="200"  y="0" class="fr1" />
+    <use xlink:href="#kc_20"  x="220"  y="0" class="fr1" />
+    <use xlink:href="#kc_21"  x="240"  y="0" class="fr1" />
     <use xlink:href="#kc_22"  x="260"  y="0" />
     <!-- }}} ROW 1 -->
     <!-- {{{ ROW 2 -->
     <use xlink:href="#kc_23"    x="0" y="20" />
-    <use xlink:href="#kc_24"   x="30" y="20" class="f1" />
-    <use xlink:href="#kc_25"   x="50" y="20" class="f2" />
-    <use xlink:href="#kc_26"   x="70" y="20" class="f3" />
-    <use xlink:href="#kc_27"   x="90" y="20" class="f4" />
-    <use xlink:href="#kc_28"  x="110" y="20" class="f5" />
-    <use xlink:href="#kc_29"  x="130" y="20" class="f5" />
-    <use xlink:href="#kc_30"  x="150" y="20" class="f4" />
-    <use xlink:href="#kc_31"  x="170" y="20" class="f3" />
-    <use xlink:href="#kc_32"  x="190" y="20" class="f2" />
-    <use xlink:href="#kc_33"  x="210" y="20" class="f1" />
-    <use xlink:href="#kc_34"  x="230" y="20" class="f1" />
-    <use xlink:href="#kc_35"  x="250" y="20" class="f1" />
-    <use xlink:href="#kc_51"  x="270" y="20" class="f1" />
+    <use xlink:href="#kc_24"   x="30" y="20" class="fl1" />
+    <use xlink:href="#kc_25"   x="50" y="20" class="fl2" />
+    <use xlink:href="#kc_26"   x="70" y="20" class="fl3" />
+    <use xlink:href="#kc_27"   x="90" y="20" class="fl4" />
+    <use xlink:href="#kc_28"  x="110" y="20" class="fl4" />
+    <use xlink:href="#kc_29"  x="130" y="20" class="fr4" />
+    <use xlink:href="#kc_30"  x="150" y="20" class="fr4" />
+    <use xlink:href="#kc_31"  x="170" y="20" class="fr3" />
+    <use xlink:href="#kc_32"  x="190" y="20" class="fr2" />
+    <use xlink:href="#kc_33"  x="210" y="20" class="fr1" />
+    <use xlink:href="#kc_34"  x="230" y="20" class="fr1" />
+    <use xlink:href="#kc_35"  x="250" y="20" class="fr1" />
+    <use xlink:href="#kc_51"  x="270" y="20" class="fr1" />
     <!-- }}} ROW 2 -->
     <!-- {{{ ROW 3 -->
     <use xlink:href="#kc_66"    x="0" y="40" />
-    <use xlink:href="#kc_38"   x="35" y="40" class="f1" />
-    <use xlink:href="#kc_39"   x="55" y="40" class="f2" />
-    <use xlink:href="#kc_40"   x="75" y="40" class="f3" />
-    <use xlink:href="#kc_41"   x="95" y="40" class="f4" />
-    <use xlink:href="#kc_42"  x="115" y="40" class="f5" />
-    <use xlink:href="#kc_43"  x="135" y="40" class="f5" />
-    <use xlink:href="#kc_44"  x="155" y="40" class="f4" />
-    <use xlink:href="#kc_45"  x="175" y="40" class="f3" />
-    <use xlink:href="#kc_46"  x="195" y="40" class="f2" />
-    <use xlink:href="#kc_47"  x="215" y="40" class="f1" />
-    <use xlink:href="#kc_48"  x="235" y="40" class="f1" />
+    <use xlink:href="#kc_38"   x="35" y="40" class="fl1" />
+    <use xlink:href="#kc_39"   x="55" y="40" class="fl2" />
+    <use xlink:href="#kc_40"   x="75" y="40" class="fl3" />
+    <use xlink:href="#kc_41"   x="95" y="40" class="fl4" />
+    <use xlink:href="#kc_42"  x="115" y="40" class="fl4" />
+    <use xlink:href="#kc_43"  x="135" y="40" class="fr4" />
+    <use xlink:href="#kc_44"  x="155" y="40" class="fr4" />
+    <use xlink:href="#kc_45"  x="175" y="40" class="fr3" />
+    <use xlink:href="#kc_46"  x="195" y="40" class="fr2" />
+    <use xlink:href="#kc_47"  x="215" y="40" class="fr1" />
+    <use xlink:href="#kc_48"  x="235" y="40" class="fr1" />
     <use xlink:href="#kc_36"  x="255" y="40" />
     <!-- }}} ROW 3 -->
     <!-- {{{ ROW 4 -->
     <use xlink:href="#kc_50"    x="0" y="60" />
-    <use xlink:href="#kc_52"   x="45" y="60" class="f1" />
-    <use xlink:href="#kc_53"   x="65" y="60" class="f2" />
-    <use xlink:href="#kc_54"   x="85" y="60" class="f3" />
-    <use xlink:href="#kc_55"  x="105" y="60" class="f4" />
-    <use xlink:href="#kc_56"  x="125" y="60" class="f5" />
-    <use xlink:href="#kc_57"  x="145" y="60" class="f5" />
-    <use xlink:href="#kc_58"  x="165" y="60" class="f4" />
-    <use xlink:href="#kc_59"  x="185" y="60" class="f3" />
-    <use xlink:href="#kc_60"  x="205" y="60" class="f2" />
-    <use xlink:href="#kc_61"  x="225" y="60" class="f1" />
+    <use xlink:href="#kc_52"   x="45" y="60" class="fl1" />
+    <use xlink:href="#kc_53"   x="65" y="60" class="fl2" />
+    <use xlink:href="#kc_54"   x="85" y="60" class="fl3" />
+    <use xlink:href="#kc_55"  x="105" y="60" class="fl4" />
+    <use xlink:href="#kc_56"  x="125" y="60" class="fl4" />
+    <use xlink:href="#kc_57"  x="145" y="60" class="fr4" />
+    <use xlink:href="#kc_58"  x="165" y="60" class="fr4" />
+    <use xlink:href="#kc_59"  x="185" y="60" class="fr3" />
+    <use xlink:href="#kc_60"  x="205" y="60" class="fr2" />
+    <use xlink:href="#kc_61"  x="225" y="60" class="fr1" />
     <use xlink:href="#kc_62"  x="245" y="60" />
     <!-- }}} ROW 4 -->
     <!-- {{{ ROW 5 -->
     <use xlink:href="#kc_37"    x="0" y="80" />
     <use xlink:href="#kc_133"  x="25" y="80" />
     <use xlink:href="#kc_64"   x="50" y="80" />
-    <use xlink:href="#kc_65"   x="75" y="80" class="fs" />
+    <use xlink:href="#kc_65"   x="75" y="80" class="f5" />
     <use xlink:href="#kc_108" x="200" y="80" />
     <use xlink:href="#kc_134" x="225" y="80" />
     <use xlink:href="#kc_135" x="250" y="80" />
