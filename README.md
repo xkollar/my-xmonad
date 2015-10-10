@@ -55,22 +55,19 @@ to look when switching to particular workspace).
 ![Two-Screen Example](doc/two-screen.png)
 
 Let us say that (for the sake of simplicity) you
-have two screens and 4 workpaces (1..4).
+have two screens and 4 workspaces (1..4).
 You have <kbd>mod</kbd>-<kbd>1</kbd> through <kbd>mod</kbd>-<kbd>4</kbd>
-bound to respective workspaces.
+bound to respective workspaces. This is what would happen:
 
-Combination <kbd>mod</kbd>-<kbd>1</kbd>: active screen is `External`
-screen and on it workspace 1. (On the `Main` screen is whatever was there before.)
-
-Combination <kbd>mod</kbd>-<kbd>3</kbd>: active is `Main` screen
-and on it is workspace 3. (On the `External` screen is still workspace 1.)
-
-Combination <kbd>mod</kbd>-<kbd>2</kbd>: active is `Main` screen
-and on it is workspace 2. (On the `External` screen is still workspace 1.)
-
-Combination <kbd>mod</kbd>-<kbd>1</kbd>: active is `External` screen
-and on it is workspace 1. (On the `Main` screen is still workspace 2
-from the previous step.)
+* Pressing <kbd>mod</kbd>-<kbd>1</kbd>: active screen is `External`
+  screen and on it workspace 1. (On the `Main` screen is whatever was there before.)
+* Pressing <kbd>mod</kbd>-<kbd>3</kbd>: active is `Main` screen
+  and on it is workspace 3. (On the `External` screen is still workspace 1.)
+* Pressing <kbd>mod</kbd>-<kbd>2</kbd>: active is `Main` screen
+  and on it is workspace 2. (On the `External` screen is still workspace 1.)
+* Pressing <kbd>mod</kbd>-<kbd>1</kbd>: active is `External` screen
+  and on it is workspace 1. (On the `Main` screen is still workspace 2
+  from the previous step.)
 
 Requirements
 ------------
