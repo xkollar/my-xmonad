@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 function usage() {
-    echo "Usage: ${0} <full|brief> [filename]"
+    echo "Usage: ${0} <full|brief|brief-color> [filename]"
 }
 
 function main() {
     case "${1}" in
-        full | brief )
+        full | brief | brief-color )
             true
             ;;
         * )
