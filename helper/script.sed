@@ -28,9 +28,9 @@ s/\<asciitilde\>/~/
 s/\<backslash\>/\\\\/
 s/\<bar\>/|/
 s/\<comma\>/,/
-s/\<less\>/</
+s/\<less\>/\\\&lt;/
 s/\<period\>/./
-s/\<greater\>/>/
+s/\<greater\>/\\\&gt;/
 s/\<slash\>/\\\//
 s/\<question\>/?/
 s/\(Tab\|Shift\|Control\|Super\|Alt\).*/\1/
@@ -43,5 +43,5 @@ s/^\([0-9]\+\) \([^ ]\) \(\2\)/\1 \3/I
 
 s/^\([0-9]\+\) \([^ ]\)$/s\/\\(id="kc_\1".*\\)_\/\\1<text text-anchor="start" font-family="Monospace" font-size="10" x="2" y="11">\2<\\\/text>\//
 s/^\([0-9]\+\) \([^ ]\+\)$/s\/\\(id="kc_\1".*\\)_\/\\1<text text-anchor="start" font-family="Monospace" font-size="5" x="2" y="6">\2<\\\/text>\//
-s/^\([0-9]\+\) \([^ ]*\) \([^ ]*\)$/s\/\\(id="kc_\1".*\\)_\/\\1<text text-anchor="start" font-family="Monospace" font-size="7" x="2" y="8">\2<\\\/text><text text-anchor="start" font-family="Monospace" font-size="7" x="2" y="16">\3<\\\/text>\//
+s/^\([0-9]\+\) \([^ ]*\) \([^ ]*\)$/s\/\\(id="kc_\1".*\\)_\/\\1<text text-anchor="start" font-family="Monospace" font-size="7" x="2" y="8">\3<\\\/text><text text-anchor="start" font-family="Monospace" font-size="7" x="2" y="16">\2<\\\/text>\//
 # Yes. This sed script generates sed script.
