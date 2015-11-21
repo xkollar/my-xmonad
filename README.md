@@ -113,7 +113,7 @@ Xmonad Sandboxed
 ----------------
 
 tl;dr: you can use [`My.XMonad.Config.Mods.Sandboxed`](src/My/XMonad/Config/Mods/Sandboxed.hs) when running
-sandboxed xmonad.
+sandboxed xmonad. First run is a little bit special though.
 
 In case you have tried installing xmonad in sandbox, you have
 probably found out that it is not going to work out of box.
@@ -142,7 +142,7 @@ Appropriate helper is readily available in
 [`My.XMonad.Config.Mods.Sandboxed`](src/My/XMonad/Config/Mods/Sandboxed.hs).
 Example use:
 
-~~~ { .haskell }
+~~~ { .haskell label=example-sandboxed }
 module Main (main) where
 
 import XMonad (xmonad)
@@ -156,3 +156,16 @@ main = xmonad $ sandboxed myConfig
 ~~~
 
 By the way: `GHCi` can also be parametrized with `--package-db` and `GHC_PACKAGE_PATH`.
+
+### First Sandboxed run.
+
+Be sure to have valid `xmonad.hs` your `${HOME}/.xmonad` directory.
+
+~~~ { .bash }
+git clone https://github.com/xkollar/my-xmonad.git
+cd my-xmonad
+cabal sandbox init
+mkdir -p "${HOME}/.cabal/bin"
+cabal --require-sandbox install --symlink-bindir="${HOME}/.cabal/bin"
+GHC_PACKAGE_PATH=$( echo "${PWD}/.cabal-sandbox"/*-packages.conf.d ): "${HOME}/.cabal/bin/xmonad" --recompile
+~~~
