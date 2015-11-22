@@ -87,13 +87,6 @@ Which can be (on Fedora) done by following command.
 yum install libXft-devel libXinerama-devel libXrandr-devel
 ~~~
 
-If you plan to use xmobar then you can smoothen its installation
-by installing development version of `Xmp` library.
-
-~~~ { .bash }
-yum install libXpm-devel
-~~~
-
 Installation + Configuration
 ----------------------------
 
@@ -168,4 +161,34 @@ cabal sandbox init
 mkdir -p "${HOME}/.cabal/bin"
 cabal --require-sandbox install --symlink-bindir="${HOME}/.cabal/bin"
 GHC_PACKAGE_PATH=$( echo "${PWD}/.cabal-sandbox"/*-packages.conf.d ): "${HOME}/.cabal/bin/xmonad" --recompile
+~~~
+
+Xmobar
+------
+
+If you plan to use xmobar then you can smoothen its installation
+by installing development version of `Xmp` library.
+
+~~~ { .bash }
+yum install libXpm-devel
+~~~
+
+Install sandboxed with
+
+~~~ { .bash }
+cabal --require-sandbox install --symlink-bindir="${HOME}/.cabal/bin"
+~~~
+
+Example configuration to work with `My.XMonad.Config.Mods.Xmobar`.
+(`StdinReader` is **important**. Otherwise xmonad will hang
+after some time, trying to write into handle that nobody reads.)
+
+~~~ { .haskell label=example-xmobar-config }
+Config
+    { commands = [ Run Date "%a %Y-%m-%d %H:%M" "date" 200
+                 , Run StdinReader
+                 ]
+    , font = "-*-Terminus-*-*-*-*-12-*-*-*-*-*-iso10646-*"
+    , template = "%StdinReader% }{ <fc=#FF0000>%date%</fc>"
+    }
 ~~~
