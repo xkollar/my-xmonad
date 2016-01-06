@@ -74,7 +74,7 @@ library
                     template-haskell,
                     transformers,
                     unix,
-                    xmonad,
+                    xmonad <0.12,
                     xmonad-contrib
 
   -- Directories containing source files.
