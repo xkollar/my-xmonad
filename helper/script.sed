@@ -45,4 +45,4 @@ s/^\([0-9]\+\) \([^ ]\)$/s\/\\(id="kc_\1".*\\)_\/\\1<text text-anchor="start" fo
 s/^\([0-9]\+\) \([^ ]\+\)$/s\/\\(id="kc_\1".*\\)_\/\\1<text text-anchor="start" font-family="Monospace" font-size="5" x="2" y="6">\2<\\\/text>\//
 s/^\([0-9]\+\) \([^ ]*\) \([^ ]*\)$/s\/\\(id="kc_\1"[^_]*\\)_\/\\1<text text-anchor="start" font-family="Monospace" font-size="7" x="2" y="8">\3<\\\/text><text text-anchor="start" font-family="Monospace" font-size="7" x="2" y="16">\2<\\\/text>\//
 # Yes. This sed script generates sed script.
-# Yes. It modifies (quite specific) XML based on input from `xmodmap -pke`.
+# Yes. The resulting script modifies (quite specific) XML based on input from `xmodmap -pke`.
