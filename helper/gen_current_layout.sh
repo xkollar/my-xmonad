@@ -1,12 +1,25 @@
 #!/usr/bin/env bash
 
+set -eu
+
+share="$( dirname "${0}" )"
+
 function usage() {
     echo "Usage: ${0} <full|brief|brief-color> [filename]"
     echo "       ${0} <full|brief|brief-color> [ImageMagick options] filename"
     echo "       ${0} <--help|-h>"
 }
 
+function die_usage() {
+    usage >&2
+    exit 1
+}
+
 function main() {
+    if [[ ${#} -lt 1 ]]; then
+        die_usage
+    fi
+
     local -r mode="${1}"; shift
 
     case "${mode}" in
@@ -18,12 +31,13 @@ function main() {
             exit 0
             ;;
         * )
-            usage >&2
-            exit 1
+            die_usage
             ;;
     esac
 
-    sed -f <( xmodmap -pke | sed -f script.sed ) "ibm-pc-keyboard-${mode}.svg" \
+    sed \
+        -f <( xmodmap -pke | sed -f "${share}/script.sed" ) \
+        "${share}/ibm-pc-keyboard-${mode}.svg" \
     | convert -background transparent - "${@:-x:}"
 }
 
