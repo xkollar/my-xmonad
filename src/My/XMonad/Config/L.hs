@@ -1,7 +1,8 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE TemplateHaskell #-}
 module My.XMonad.Config.L
-    ( update
+    ( set
+    , update
     , borderWidth
     , keys
     , logHook
