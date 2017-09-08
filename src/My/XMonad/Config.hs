@@ -8,19 +8,22 @@ import Data.Bool (Bool(False, True), not)
 import Data.Char (isSpace)
 import Data.Function ((.), ($))
 import Data.List ((++), dropWhile, filter, map, nub, null, zip)
-import qualified Data.Map.Lazy as M (Map, fromList)
 import Data.Monoid (All(All))
-
 import System.Exit (exitSuccess)
+
+import Data.Default (def)
+import qualified Data.Map.Lazy as M (Map, fromList)
 
 import qualified XMonad as XM
     ( XConfig
         ( XConfig
         , borderWidth
         , clickJustFocuses
-        , focusFollowsMouse
+        , clientMask
         , focusedBorderColor
+        , focusFollowsMouse
         , handleEventHook
+        , handleExtraArgs
         , keys
         , layoutHook
         , logHook
@@ -28,6 +31,7 @@ import qualified XMonad as XM
         , modMask
         , mouseBindings
         , normalBorderColor
+        , rootMask
         , startupHook
         , terminal
         , workspaces
@@ -49,7 +53,6 @@ import XMonad
     , button2
     , button3
     , composeAll
-    , defaultConfig
     , io
     , mod4Mask
     , noModMask
@@ -96,7 +99,6 @@ import XMonad.Prompt
         ( font
         , historyFilter
         )
-    , defaultXPConfig
     )
 import XMonad.Prompt.Shell (shellPrompt)
 import qualified XMonad.StackSet as W
@@ -123,6 +125,9 @@ myConfig = XM.XConfig
     , XM.handleEventHook    = myHandleEventHook
     , XM.focusFollowsMouse  = False
     , XM.clickJustFocuses   = True
+    , XM.clientMask         = XM.clientMask def
+    , XM.rootMask           = XM.rootMask def
+    , XM.handleExtraArgs    = XM.handleExtraArgs def
     }
 
 myBorderWidth :: Dimension
@@ -134,7 +139,7 @@ myWorkspaces = map (:[]) "αβγδεζηθι"
 myLayoutHook :: ModifiedLayout
     AvoidStruts (ModifiedLayout SmartBorder (Choose Tall (Choose (Mirror Tall) Full)))
     Window
-myLayoutHook = avoidStruts . smartBorders $ XM.layoutHook defaultConfig
+myLayoutHook = avoidStruts . smartBorders $ XM.layoutHook def
 
 myKeys :: XM.XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XM.XConfig {XM.modMask = modMask}) = M.fromList $
@@ -196,7 +201,7 @@ myKeys conf@(XM.XConfig {XM.modMask = modMask}) = M.fromList $
         , (f, m) <- [(simpleView, noModMask), (W.shift, shiftMask)]]
 
 myShellPrompt :: X ()
-myShellPrompt = shellPrompt defaultXPConfig { historyFilter = hf , font = fn }
+myShellPrompt = shellPrompt def { historyFilter = hf , font = fn }
     where
     hf = nub . filter (not . null) . map (dropWhile isSpace)
     fn = "-*-Terminus-*-*-*-*-*-*-*-*-*-*-iso10646-*"

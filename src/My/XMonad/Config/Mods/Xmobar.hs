@@ -18,11 +18,12 @@ import XMonad.Hooks.DynamicLog
     , shorten
     , xmobarColor
     , xmobarPP)
+import XMonad.Hooks.ManageDocks (docks)
 
 import My.XMonad.Config.L (update, logHook)
 
 addXmobar :: Handle -> XConfig l -> XConfig l
-addXmobar = update logHook . (>>) . myXmobarLogHook
+addXmobar = (.) docks . update logHook . (>>) . myXmobarLogHook
 
 myXmobarLogHook :: Handle -> X ()
 myXmobarLogHook h = dynamicLogWithPP xmobarPP
