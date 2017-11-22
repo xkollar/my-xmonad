@@ -2,7 +2,7 @@
 
 set -eu
 
-share="$( dirname "${0}" )"
+share=$( readlink -f "$( dirname "${BASH_SOURCE[0]}" )" )
 
 function usage() {
     echo "Usage: ${0} <full|brief|brief-color> [filename]"
