@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -eu
+
+TARGET=$( realpath "${1}" )
+
+DIR="${HOME}/.xmonad"
+cd "${DIR}/my-xmonad"
+nix-shell --run "cabal exec -- ghc --make ${DIR}/xmonad.hs -fforce-recomp -main-is main -v0 -o '${TARGET}'"
