@@ -192,3 +192,15 @@ Config
     , template = "%StdinReader% }{ <fc=#FF0000>%date%</fc>"
     }
 ~~~
+
+Troubleshooting
+---------------
+
+These steps are a bit drastic, but... after not re-building for some time,
+maybe updating stuff on system... one might need to:
+
+* `cabal clean`
+* `rm -rf ~/.cabal`
+* `cabal install` in this directory
+* `cabal install xmonad` to have xmonad executable
+* `./build` to finally recompile ... things should work at this point

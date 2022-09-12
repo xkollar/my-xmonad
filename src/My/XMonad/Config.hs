@@ -86,6 +86,7 @@ import XMonad.Layout
     , ChangeLayout(NextLayout)
     , Choose
     )
+import XMonad.Layout.LayoutHints (LayoutHints, layoutHintsWithPlacement)
 import XMonad.Layout.LayoutModifier (ModifiedLayout)
 import XMonad.Layout.NoBorders (smartBorders, SmartBorder)
 import XMonad.ManageHook ((-->), (=?), className)
@@ -108,12 +109,12 @@ import My.XMonad.Core (spawn', spawnSh)
 import My.XMonad.StackSet (simpleView)
 
 
-myConfig :: XM.XConfig (ModifiedLayout AvoidStruts (ModifiedLayout SmartBorder (Choose Tall (Choose (Mirror Tall) Full))))
+myConfig :: XM.XConfig MyLayout
 myConfig = XM.XConfig
     { XM.borderWidth        = myBorderWidth
     , XM.workspaces         = myWorkspaces
     , XM.layoutHook         = myLayoutHook
-    , XM.terminal           = "xterm"
+    , XM.terminal           = "urxvt"
     , XM.normalBorderColor  = "gray"
     , XM.focusedBorderColor = "red"
     , XM.modMask            = mod4Mask
@@ -136,10 +137,13 @@ myBorderWidth = 1
 myWorkspaces :: [String]
 myWorkspaces = map (:[]) "αβγδεζηθι"
 
-myLayoutHook :: ModifiedLayout
-    AvoidStruts (ModifiedLayout SmartBorder (Choose Tall (Choose (Mirror Tall) Full)))
-    Window
-myLayoutHook = avoidStruts . smartBorders $ XM.layoutHook def
+type MyLayout = ModifiedLayout LayoutHints
+    (ModifiedLayout AvoidStruts
+    (ModifiedLayout SmartBorder
+    (Choose Tall (Choose (Mirror Tall) Full))))
+
+myLayoutHook :: MyLayout Window
+myLayoutHook = layoutHintsWithPlacement (0.5, 0.5) . avoidStruts . smartBorders $ XM.layoutHook def
 
 myKeys :: XM.XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XM.XConfig {XM.modMask = modMask}) = M.fromList $

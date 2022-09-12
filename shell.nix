@@ -2,7 +2,7 @@
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
     cabal-install
-    haskell.compiler.ghc882
+    haskell.compiler.ghc884
     haskellPackages.ghcid
     haskellPackages.xmobar
     pkg-config
